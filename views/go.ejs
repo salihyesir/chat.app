@@ -1,0 +1,170 @@
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <h4 class="text-center text-blue">Chatterbox</h4>
+        <div id="formBaslik" class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Login
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button></h5>        
+        </div>
+
+        <div class="modal-body">
+            <form id="formLogin" class="form" role="form" autocomplete="off" novalidate="">
+                <div id="justNick" class="form-group">
+                    <input  id="uname"  type="text" class="form-control form-control-lg rounded-0" required="" placeholder="Username">
+                    <div id="bilgilendirme" class="invalid-feedback">Lütfen bir nick giriniz.</div>
+                </div>                  
+        </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success" id="btnLogin">Login</button> 
+                </div>
+            </form>
+    </div>
+    <!--content-->
+  </div>
+  <!-- modal diolag-->
+</div>
+<!-- modal fade -->
+
+
+
+<div class="modal fade" id="roomModal" tabindex="-1" role="dialog" aria-labelledby="roomModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <h4 class="text-center text-blue">Chatterbox</h4>
+        <div id="roomFormBaslik" class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Grup Ekle
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button></h5>        
+        </div>
+
+        <div class="modal-body">
+            <form id="roomAddForm" class="form" role="form" autocomplete="off" novalidate="">
+                <div id="justRoom" class="form-group">
+                    <input  id="rname"  type="text" class="form-control form-control-lg rounded-0" required="" placeholder="room name">
+                    <div id="bilgilendirmeRoom" class="invalid-feedback">.</div>
+                </div>                  
+        </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success" id="btnRoom">Create!</button> 
+                </div>
+            </form>
+    </div>
+    <!--content-->
+  </div>
+  <!-- modal diolag-->
+</div>
+<!-- modal fade -->
+
+<div class="modal fade" id="joinModal" tabindex="-1" role="dialog" aria-labelledby="joinModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <h4 class="text-center text-blue">Chatterbox</h4>
+        <div id="roomFormJoinBaslik" class="card-header bg-primary text-white">
+                    <h5 class="mb-0">Gruba Gir
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button></h5>        
+        </div>
+
+        <div class="modal-body">
+            <form id="joinForm" class="form" role="form" autocomplete="off" novalidate="">
+                <div id="justJoinRoom" class="form-group">
+                    <input  id="jrname"  type="text" class="form-control form-control-lg rounded-0" required="" placeholder="room name">
+                    <div id="bilgilendirmeJoinRoom" class="invalid-feedback">.</div>
+                </div>                  
+        </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success" id="btnJoinRoom">Join!</button> 
+                </div>
+            </form>
+    </div>
+    <!--content-->
+  </div>
+  <!-- modal diolag-->
+</div>
+<!-- modal fade -->
+
+
+<div class="modal fade" id="privateMessageDiv" tabindex="-1" role="dialog" aria-labelledby="privateMessageDivLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="privateMessageDivLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    <div class="modal-body">
+        <form id="formOzel" class="form was-validated" role="form" autocomplete="off" novalidate="">
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label" >Recipient:</label>
+                <input type="text" class="form-control" id="recipient-name" required="" placeholder="nick">
+            </div>
+            <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text" required="" placeholder="Mesaj"></textarea>
+                <div id="privateBilgilendirme" class="invalid-feedback"></div>
+            </div>
+    </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="bolum1">
+    <div class="container">
+        <h4 class="text-center">Chatterbox</h4>
+        <br/>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="roomName" class="card-header bg-info text-white">Messages</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+                <div id="messagesDiv" class="cars-body fixed-panel messagesDiv">
+                    <ul id="messageList" class="list-group">
+
+                    </ul>
+                </div>
+                <div class="card-footer">
+                    <form id="goMessage">
+                        <div class="input-group">
+                            <input id="message" type="text" class="form-control" placeholder="Write Message"/>
+                            <span class="input-group-btn">
+                                <button class="btn btn-success" type="submit">Send!</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- md8 ChatDiv-->
+
+            <div class="col-md-4">
+                <div class="card-header bg-success text-white">Active</div>
+                <div class="card-body fixed-panel">
+                    <ul id="actives" class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+            <!-- md4 userlistDiv-->
+        </div>
+        <!--/row>-->
+    </div>
+    <!--/container -->
+</div>
+<!-- /bolum1 -->
+<br>

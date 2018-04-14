@@ -1,0 +1,24 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "Bu uygulama Ağ programlama dersinin 2. Ödevidir.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "mongo",
+    "chat",
+    "socket"
+  ],
+  "author": "Salih YESİR",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-ejs-layouts": "^2.4.0",
+    "mongoose": "^5.0.14",
+    "socket.io": "^2.1.0"
+  }
+}

@@ -1,0 +1,2 @@
+UML zamanlama diyagramý hem pdf hem de  png formatýnda hem de rapor içerisinde bulunmaktadýr.
+Komut satýrýndan ilgili dizine girerek npm start komutunu vermeniz yeterlidir.

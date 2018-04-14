@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <title>Chat APP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../public/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="../public/app/app.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../public/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="../public/js/popper-1.12.9.min.js"></script>
+  <script type="text/javascript" src="../public/js/bootstrap/bootstrap.min.js"></script>
+
+  
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+</head>
+
+<body>
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#privateMessageDiv" data-whatever="@mdo">Open modal for @mdo</button>-->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a id="genelSide" href="#" data-toggle="modal" data-target="#loginModal" class="clickable">Genel</a>
+  <a id="ozelSide"href="#" data-toggle="modal" data-target="#privateMessageDiv" class="clickable" data-whatever="salihyesir">Özel</a>
+  <a id="grupEkleSide"href="#" data-toggle="modal" data-target="#roomModal" class="clickable">Grup Ekle</a>
+  <a id="joinRoomSide"href="#" data-toggle="modal" data-target="#joinModal" class="clickable">Gruba Gir</a>
+  <a id="NodeSide"href="#" >Node.js</a>
+  <a id="SocketSide"href="#">Socket</a>
+  <a id="MongoSide" href="#" >Mongo</a>
+  
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   <%- body %>
+   
+</div>
+
+
+<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>-->
+<div>
+    <center>
+        <strong>
+            Powered by
+            <a href="https://github.com/salihyesir" target="_blank">Salih YESİR</a> 
+        </strong>
+    </center>
+</div>
+</body>
+
+<!-- Socketclient nodemodules var olan dosya versiyon problemlerini aşmak için-->
+<script src="../public/socket.io/socket.io.js"></script>
+<script src="../public/app/app.js"></script>
+</html>
